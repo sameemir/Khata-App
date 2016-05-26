@@ -21,7 +21,16 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="dfcd25050b8cb0e358788f04ac801c77ecd44658" />
+        <receiver android:name="com.khatta.rockets.receivers.ContactsReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.digits.sdk.android.UPLOAD_COMPLETE"/>
+                <action android:name="com.digits.sdk.android.UPLOAD_FAILED"/>
+                <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+                <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
 </manifest>

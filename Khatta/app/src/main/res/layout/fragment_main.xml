@@ -18,6 +18,9 @@
         android:id="@+id/auth_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
-
+    <Button
+        android:id="@+id/buttonFindContacts"
+        android:text="Find Contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

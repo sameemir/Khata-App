@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "734378134519",
+    "firebase_url": "https://khata-app.firebaseio.com",
+    "project_id": "khata-app",
+    "storage_bucket": "khata-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734378134519:android:8fe134e5f7990c3b",
+        "android_client_info": {
+          "package_name": "com.khatta.rockets.khatta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734378134519-aed2784v1censbfg73fgc79p5o0qkfpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADM125i9L4JlzRxWmZr1pBPrlWTI-D0Ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

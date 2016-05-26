@@ -5,6 +5,7 @@ buildscript {
 
     dependencies {
         classpath 'io.fabric.tools:gradle:1.+'
+        //compile 'com.firebase:firebase-client-android:2.5.2+'
     }
 }
 apply plugin: 'com.android.application'
@@ -18,6 +19,12 @@ repositories {
 android {
     compileSdkVersion 22
     buildToolsVersion "23.0.3"
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
 
     defaultConfig {
         applicationId "com.khatta.rockets.khatta"
@@ -42,4 +49,5 @@ dependencies {
     compile('com.digits.sdk.android:digits:1.10.3@aar') {
         transitive = true;
     }
+    apply plugin: 'com.google.gms.google-services'
 }
